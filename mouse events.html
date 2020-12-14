@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script>
+	$(document).ready(function(){
+		$("#box").mouseenter(function(){
+	 		$(this).css('background-color','red')
+
+	 	})
+	 	$("#box").click(function(){
+	 		$(this).css('background-color','green')
+
+	 	})
+	 	$("#box").dblclick(function(){
+	 		$(this).css('background-color','pink')
+
+	 	})
+	 	$("#box").contextmenu(function(){
+	 		$(this).css('background-color','white')
+
+	 	})
+	 	$("#box").mouseleave(function(){
+	 		$(this).css('background-color','yellow')
+
+	 	})
+	});
+	</script>
+<style type="text/css">
+	.container{
+		text-align: center;
+		width: 500px;
+		margin: 0 auto;
+	}
+	#box{
+		background-color: skyblue;
+		border: 2px solid black;
+		padding: 10px;
+
+	}
+</style>
+</head>
+<body>
+
+<div class="container">
+	 <h1>jQuery Mouse Events</h1>
+	 <div id="box">
+	 	<h2 >This is heading</h2>
+	 	<p>This is paragraph text here What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy </p>
+	 </div>
+
+</div>
+
+</body>
+</html>
